@@ -1,0 +1,82 @@
+=========
+read string seperated by newline
+===========
+
+scanner := bufio.NewScanner(os.Stdin)
+scanner.Scan()
+st_num = scanner.Text()
+
+int_num, err = strconv.Atoi(st_num)
+
+if err == nil {
+	//convert string to int and append
+	mySlice = append(mySlice, int_num)
+}
+
+
+
+==================
+read int sep by space
+==================
+_, err := fmt.Scanf("%s", &st_num)
+		
+		int_num, err = strconv.Atoi(strings.TrimSpace(st_num))
+		if err == nil {
+			//convert string to int and append
+			mySlice = append(mySlice, int_num)
+		}
+
+==========
+read by line not work
+=======
+var size int
+	fmt.Printf("Please enter the size of the array: ")
+	fmt.Scan(&size)
+
+	var arr = make([]int, size)
+	for itr := 0; itr < size; itr++ {
+		fmt.Printf("Enter the element %d: ", itr+1)
+		fmt.Scan(&arr[itr])
+	}
+
+=========
+read linewise. no newline issue
+--------
+
+fmt.Println("Enter acceleration: ")
+	_, err = fmt.Scan(&acce)
+    if err != nil {
+	fmt.Println(err)
+	}
+    
+----------
+
+var a, v0, s0 float64
+	fmt.Print("Enter Acceleration : ")
+	fmt.Scanln(&a)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=========

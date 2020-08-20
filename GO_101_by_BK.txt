@@ -1,0 +1,8 @@
+to create folder
+mkdir folderName
+
+make new empty go file
+echo > NEWfilename.go
+
+to compile go-program
+go build
