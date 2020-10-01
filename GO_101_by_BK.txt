@@ -6,3 +6,5 @@ echo > NEWfilename.go
 
 to compile go-program
 go build
+
+by thebkrox@gmail.com
